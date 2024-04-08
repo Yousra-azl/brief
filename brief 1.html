@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="">
+        <label for="Prénom">Prénom</label>
+            <input type="text" id="Prénom" placeholder="Yousra" required>
+        <label for="Nom">Nom</label>
+            <input type="text" id="Nom" placeholder="HADIR" required>
+        <label for="Age">Age</label>
+            <input type="number" id="Age" min="18" max="80" required><br>
+            <br>
+        <fieldset>
+            <legend>sexe</legend>
+            <input type="radio" name="Masculin" id="Masculin">
+            <label for="Masculin">Masculin</label>
+            <input type="radio" name="Féminin" id="Féminin">
+            <label for="Féminin">Féminin</label>
+            <input type="radio" name="Autre" id="Autre">
+            <label for="Autre">Autre</label></fieldset><br>
+        <br>
+        <label for="Adresse-mail">Adresse mail</label>
+            <input type="email" id="Adresse-mail" placeholder="Mr.farine@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="enter une Adresse-mail valide" required>
+        <label for="Adresse-postal">Adresse postal</label>
+            <input type="text" id="Adresse-postal" placeholder="06 rue la boulagerie">
+        <label for="Code-postal">Code postal</label>
+            <input type="text" id="Code-postal" placeholder="59000" pattern="\d{5}" maxlength="5">
+            <label for="Ville">Ville</label>
+                <input type="text" id="Ville" placeholder="Valenciennes"><br>
+                <br>
+        
+        <label for="Metier-exercé">Metier exercé</label>
+        <select name="Metier-exercé" id="Metier-exercé">
+            <option value="Agent artistique">Agent artistique</option>
+            <option value="Agent de voyages">Agent de voyages</option>
+            <option value="Agent de sécurité">Agent de sécurité</option>
+            <option value="Chef comptable">Chef comptable</option>
+            <option value="Conseiller de voyages">Conseiller de voyages</option>
+        </select><br>
+        <br>
+        <label for="Nationalité">Nationalité</label>
+        <select name="Nationalité" id="Nationalité" required>
+            <option value="">Selectionner votre Nationalité </option>
+            <option value="Espagnol">Espagnol</option>
+            <option value="Français">Français</option>
+            <option value="Hollandais">Hollandais</option>
+            <option value="Américain">Américain</option>
+            <option value="Marocain">Marocain</option></select><br>
+       <br>
+        <label for="Date-de-Naissance">Date de Naissance</label>
+            <input type="date" name="Date de Naissance" id="Date-de-Naissance" required><br>
+        <br>
+        <label for="Pays-de-naissance">Pays de naissance</label>
+            <input type="text" name="Pays de naissance" id="Pays-de-naissance" required><br>
+        <br>
+        <label for="Numéro-de-sécurité-social">Numéro de sécurité social</label>
+            <input type="text" name="Numéro de sécurité social" id="Numéro-de-sécurité-social" pattern="\d{13}" maxlength="13" required><br>
+        <br>
+        <label for="Numéro-du-passeport">Numéro du passeport</label>
+                <input type="text" name="Numéro du passeport" id="Numéro-du-passeport" required><br>
+        <br>
+        <label for="Date-de-délivrance-du-passeport">Date de délivrance du passeport</label>
+                <input type="date" name="Date de délivrance du passeport" id="Date-de-délivrance-du-passeport" required><br>
+        <br>
+        <label for="Date-de-validité-du-passeport">Date-de-validité-du-passeport</label> 
+                <input type="date" name="Date de validité du passeport" id="Date-de-validité-du-passeport" required><br> 
+        <input type="reset" name="Réinitialiser" id="Réinitialiser">
+        <input type="submit" name="Envoyer" id="Envoyer">
+
+    
+
+    </form>
+</body>
+</html>
